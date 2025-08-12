@@ -14,17 +14,17 @@ Bradski criou visando fornecer uma biblioteca gratuita e otimizada, podendo tant
 
 ### História
 
-**1999/2000**
+- **1999/2000**
     - Intel lança o projeto para uso interno.
-**2006**
+- **2006**
     - Versão 1.0 chega ao público.
-**2009**
+- **2009**
     - Open CV 2 com APIs C++ modernizadas, oferecendo melhoria de desempenho e portabilidade.
-**2015**
+- **2015**
     - Open CV 3.0 adiciona suporte C++11, melhores bindings para Python e mais algoritmos de Machine Learning.
-**2023/2024**
+- **2023/2024**
     - Open CV 4.8.0 traz backend Vulkan (até 4× desempenho), suporte a AVIF/HEVC, OpenVINO e melhorias para JS/Python.
-**2025**
+- **2025**
     - Versão 4.12.0 liberada com suporte ao C++20, quantização DNN, HALs para RISC-V e Qualcomm, entre outros.
     - OpenCV 5 Alpha (preview) já disponível.
 
@@ -34,19 +34,19 @@ O OpenCV foi projetado para ser multiplataforma. Ele foi escrito nativamente na 
 
 ### Como Funciona
 
-**Nível Conceitual**
+- **Nível Conceitual**
     - Pega imagens e vídeos como matrizes de pixels.
     - Aplica operações matemáticas e lógicas para extrair informações visuais.
-**Entrada dos Dados**
+- **Entrada dos Dados**
     - Carrega dados de várias fontes.
-**Processamento da imagem ou vídeo**
+- **Processamento da imagem ou vídeo**
     - Após ler a imagem ou vídeo, possibilita aplicar operações como:
         - Geométricas
         - Cores
         - Filtros
         - Reconhecimentos
         - Desenhos
-**Exibição ou salvamento do resultado**
+- **Exibição ou salvamento do resultado**
     - Possibilita:
         - Mostrar em janelas (cv2.imshow)
         - Salvar em disco (cv2.imwrite)
@@ -54,37 +54,37 @@ O OpenCV foi projetado para ser multiplataforma. Ele foi escrito nativamente na 
 
 ### Principais Recursos
 
-**CORE / IMGPROC**
+- **CORE / IMGPROC**
     - **CORE**: Funções básicas para lidar com imagens.
     - **IMGPROC**: Ajusta e transforma imagens.
-**Objdetect / Tracking**
+- **Objdetect / Tracking**
     - Detecção de faces.
-**Features2D / Calib3D**
+- **Features2D / Calib3D**
     - **Features2D**: Encontra pontos importantes em imagens.
     - **Calib3D**: Trabalha com visão e medições em 3D.
-**ML interno**
+- **ML interno**
     - Conjunto de métodos de aprendizado de máquina para analisar e classificar dados.
-**DNN**
+- **DNN**
     - Usa redes neurais para reconhecer e identificar objetos em imagens e vídeos.
-**G-API**
+- **G-API**
     - Ferramenta do OpenCV para criar e acelerar o processamento de imagens de forma mais rápida e organizada.
 
 ### Aplicações Reais
 
-**Automação e robótica**
+- **Automação e robótica**
     - Detecção de obstáculos
     - Fluxo óptico
     - Reconhecimento de sinais de trânsito
-**Medicina**
+- **Medicina**
     - Segmentação de tumores
     - Registro de imagem
     - Pré-processamento DICOM
     - Análise de contraste
-**Segurança e vigilância**
+- **Segurança e vigilância**
     - Detecção de movimento
     - Reconhecimento facial
     - Alerta automáticos
-**AR/VR**
+- **AR/VR**
     - Interface humano-computador
     - Reconstrução 3D
     - Aplicações em drones
@@ -92,37 +92,37 @@ O OpenCV foi projetado para ser multiplataforma. Ele foi escrito nativamente na 
 
 ### Pontos Positivos
 
-**Gratuito e Open Source** – O OpenCV tem código aberto no GitHub, permitindo uso, estudo, modificação e contribuição por qualquer pessoa.
-**Grande Comunidade e Documentação** – Conta com vasta comunidade, muitos tutoriais, fóruns e documentação oficial detalhada que facilitam o aprendizado e solução de problemas.
-**Integração com outras tecnologias** – Suporta várias linguagens e sistemas operacionais, além de integração com frameworks como TensorFlow, PyTorch e outros.
-**Biblioteca rica e completa** – Oferece milhares de funções, indo de filtros simples até redes neurais avançadas.
+- **Gratuito e Open Source** – O OpenCV tem código aberto no GitHub, permitindo uso, estudo, modificação e contribuição por qualquer pessoa.
+- **Grande Comunidade e Documentação** – Conta com vasta comunidade, muitos tutoriais, fóruns e documentação oficial detalhada que facilitam o aprendizado e solução de problemas.
+- **Integração com outras tecnologias** – Suporta várias linguagens e sistemas operacionais, além de integração com frameworks como TensorFlow, PyTorch e outros.
+- **Biblioteca rica e completa** – Oferece milhares de funções, indo de filtros simples até redes neurais avançadas.
 
 ### Concorrentes no mercado
 
-**1. Pillow (PIL Fork)**
+- **1. Pillow (PIL Fork)**
 
-**Vantagens:** Simples de usar, ótima para manipulação básica de imagens (corte, redimensionamento, filtros), boa integração com Python puro.
-**Desvantagens:** Pouco voltada para visão computacional avançada, não possui recursos nativos para detecção de objetos, faces, etc.
+- **Vantagens:** Simples de usar, ótima para manipulação básica de imagens (corte, redimensionamento, filtros), boa integração com Python puro.
+- **Desvantagens:** Pouco voltada para visão computacional avançada, não possui recursos nativos para detecção de objetos, faces, etc.
 
-**2. scikit-image**
+- **2. scikit-image**
 
-**Vantagens:** Baseada em NumPy/SciPy, fácil integração com bibliotecas científicas, boa para processamento e análise de imagens, código limpo.
-**Desvantagens:** Mais lenta em operações pesadas, não é ideal para aplicações em tempo real, menos suporte para hardware acelerado.
+- **Vantagens:** Baseada em NumPy/SciPy, fácil integração com bibliotecas científicas, boa para processamento e análise de imagens, código limpo.
+- **Desvantagens:** Mais lenta em operações pesadas, não é ideal para aplicações em tempo real, menos suporte para hardware acelerado.
 
-**3. Dlib**
+- **3. Dlib**
 
-**Vantagens:** Excelente para detecção e reconhecimento facial, suporte a Machine Learning integrado, bem otimizada em C++.
-**Desvantagens:** Pouco flexível fora de aplicações de faces, comunidade menor que a do OpenCV.
+- **Vantagens:** Excelente para detecção e reconhecimento facial, suporte a Machine Learning integrado, bem otimizada em C++.
+- **Desvantagens:** Pouco flexível fora de aplicações de faces, comunidade menor que a do OpenCV.
 
 ### Funções para serem testadas
 
-Visão Computacional
-Detecção de objetos em Tempo Real
-Segmentação de imagens
-Reconhecimentos de movimentos e gestos
-Reconhecimento facial
-Realidade aumentada
-Execução de várias operações na imagem
+- Visão Computacional
+- Detecção de objetos em Tempo Real
+- Segmentação de imagens
+- Reconhecimentos de movimentos e gestos
+- Reconhecimento facial
+- Realidade aumentada
+- Execução de várias operações na imagem
 
 ---
 
@@ -133,21 +133,21 @@ NumPy é uma biblioteca Python usada para trabalhar com matrizes (arrays). Criad
 Permite operações com álgebra linear, transformada de Fourier e matrizes N-dimensionais. É base para bibliotecas como Pandas, Scikit-Learn, SciPy e TensorFlow.
 
 ### Características
-Trabalha com arrays N-dimensionais (ndarray)  
-Mais rápido e eficiente que listas Python  
-Ideal para dados complexos (imagens, vídeos, machine learning)  
-Memória contínua, aumentando eficiência (“Localidade de Referência”)  
+- Trabalha com arrays N-dimensionais (ndarray)  
+- Mais rápido e eficiente que listas Python  
+- Ideal para dados complexos (imagens, vídeos, machine learning)  
+- Memória contínua, aumentando eficiência (“Localidade de Referência”)  
 
 ### Vantagens
-Muito mais rápido que listas comuns  
-Operações vetoriais simples e eficientes  
-Compatibilidade com outras bibliotecas científicas  
-Ideal para grandes volumes de dados numéricos
+- Muito mais rápido que listas comuns  
+- Operações vetoriais simples e eficientes  
+- Compatibilidade com outras bibliotecas científicas  
+- Ideal para grandes volumes de dados numéricos
 
 ### Desvantagens
-Tipos de dados homogêneos (não mistura tipos na mesma matriz)  
-Manipulação limitada de strings  
-Curva de aprendizado mais íngreme para iniciantes
+- Tipos de dados homogêneos (não mistura tipos na mesma matriz)  
+- Manipulação limitada de strings  
+- Curva de aprendizado mais íngreme para iniciantes
 
 ---
 
@@ -157,19 +157,19 @@ Curva de aprendizado mais íngreme para iniciantes
 O Pandas é uma biblioteca open source para ciência de dados. É usado para **limpeza**, **tratamento** e **análise exploratória** de dados.
 
 ### Pontos positivos
-Sintaxe fácil de entender  
-Ampla documentação e tutoriais  
-Fácil integração com outras bibliotecas (ex: NumPy)  
-Grande comunidade no GitHub
+- Sintaxe fácil de entender  
+- Ampla documentação e tutoriais  
+- Fácil integração com outras bibliotecas (ex: NumPy)  
+- Grande comunidade no GitHub
 
 ### Pontos negativos
-Alto consumo de memória RAM com grandes volumes de dados  
-Não é ideal para Big Data (pode travar)  
-Para grandes conjuntos, recomenda-se Spark ou Dask
+- Alto consumo de memória RAM com grandes volumes de dados  
+- Não é ideal para Big Data (pode travar)  
+- Para grandes conjuntos, recomenda-se Spark ou Dask
 
 ### Estruturas principais
-**Series** – Array unidimensional com índices para identificar registros  
-**DataFrame** – Estrutura bidimensional (tabelas com linhas e colunas)
+- **Series** – Array unidimensional com índices para identificar registros  
+- **DataFrame** – Estrutura bidimensional (tabelas com linhas e colunas)
 
 ---
 
